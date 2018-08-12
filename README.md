@@ -2,7 +2,7 @@
 
 # Cisco Autonomous AP
 
-This is an consent page overwrite for Cisco "Web Pass"
+This is a consent page replacement for Cisco "Web Pass"
 
 Tested with AIR-1142N-A-K9
 
@@ -20,4 +20,5 @@ ip admission name webpass consent
 ip admission consent-banner file flash:consent.html
 
 show ip admission status
+reload
 ```

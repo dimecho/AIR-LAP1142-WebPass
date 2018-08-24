@@ -16,8 +16,12 @@ After converting into Autonomous Mode:
 
 ```
 copy tftp://10.0.0.2/consent.html flash:
-ip admission name webpass consent
-ip admission consent-banner file flash:consent.html
+
+config t
+    ip admission name webpass consent
+    ip admission consent-banner file flash:consent.html
+    ip admission max-login-attempts 64
+end
 
 show ip admission status
 reload
